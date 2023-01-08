@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="cover" class="cover">
+    <a href="https://open.spotify.com/album/3yXJ8SlRNl2epdhlQCaewE" target="_blank"><img  id="coverArt" src="https://media.pitchfork.com/photos/62f3fead9e909489fa5fb2e4/1:1/w_600/Young-Nudy-EA-Monster.jpg" ></a>
+    <video id="trailer" src="/sounds/Untitled video - Made with Clipchamp.mp4" autoplay loop muted></video>
+    <h2 id="nowplaying"></h2>
+    <h1>Ea Monster</h1>
+    <a href="https://open.spotify.com/artist/5yPzzu25VzEk8qrGTLIrE1" target="_blank" class="artist">Young Nudy</a>
+    <p id="playsong" class="button" style="margin-right: 50px; padding: 10px 40px;">Play</p>
+    <p id="shuffle" class="button">Shuffle</p>
+  </div>
+<ol id="songlist">
+  <li class="songlist" onclick="listPlay(0)"> Ain't lying</li>
+  <li class="songlist" onclick="listPlay(1)"> Afterlife</li>
+  <li class="songlist" onclick="listPlay(2)"> Act Up</li>
+  <li class="songlist" onclick="listPlay(3)"> 1 Boat</li>
+  <li class="songlist" onclick="listPlay(4)"> Back In The 6</li>
+  <li class="songlist" onclick="listPlay(5)"> Back Back</li>
+  <li class="songlist" onclick="listPlay(6)"> Alligator</li>
+  <li class="songlist" onclick="listPlay(7)"> Ask About Me</li>
+
+
+</ol>
+
+<div id="player" class="player">
+  <img id="playerArt" src="https://media.pitchfork.com/photos/62f3fead9e909489fa5fb2e4/1:1/w_600/Young-Nudy-EA-Monster.jpg">
+  <p id="currentsong">Now Playing</p>
+  <img src="/skip_next_FILL0_wght400_GRAD0_opsz48.svg" id="next"></img>
+  <img src="/play_arrow_FILL0_wght400_GRAD0_opsz48.svg" id="play"></img>
+  <img src="/pause_FILL0_wght400_GRAD0_opsz48.svg" id="pause"></img>
+</div>
+
+
+<div id="songs" style="text-align: center;">
+<audio src="/sounds/Young Nudy - Aint Lyin ft G5ive_2.mp3" class="songs">Aint lying</audio>
+<audio src="/sounds/Young Nudy - Afterlife.mp3" class="songs">Afterlife</audio>
+<audio src="/sounds/Young Nudy - Act Up.mp3" class="songs">Act Up</audio>
+<audio src="/sounds/Young Nudy - 1 Boat.mp3" class="songs">1 Boat</audio>
+<audio src="/sounds/Young Nudy - Back In The 6.mp3" class="songs">Back In The 6</audio>
+<audio src="/sounds/Young Nudy - Back Back.mp3" class="songs">Back back</audio>
+<audio src="/sounds/Young Nudy - Alligator.mp3" class="songs">Alligator</audio>
+<audio src="/sounds/Young Nudy - Ask About Me.mp3" class="songs">Ask About Me</audio>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
